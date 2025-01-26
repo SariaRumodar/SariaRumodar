@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>latihan revou</title>
+    <style>
+        table,td,th{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <p>ini paragraf 1</p>
-    <p>ini oaragraf 2</p>
-
-    <hr>
-    ini baris 1
+<form>
+    <label for="nama">Nama: </label>
+    <input type="text" name="" id="nama">
     <br>
-    ini baris 2
-    <!-- membuat  tebal, miring dan subscripe/superscripe -->
+    <label for="password">Password: </label>
+    <input type="password" id="password">
+    <br>
+    <input type="checkbox">
+    <br>
+    <input type="radio">
+    <br>
+    <label for="pesan">Pesan: </label>
+    <textarea value="" rows="8" cols="64">ketik di sini</textarea>
+    <br>
+    <input type="submit" name="" value="OK">
 
-    <hr>
-    <p><b>ini tulisan tebal</b></p>
-    <p><i>ini tulisan miriing</i></p>
-    <p>ini <sub>tulisan subscripe</sub> dan ini <sup>tulisan superscripe</sup></p>
+</form>
 
-    <!-- membuat unorder list dan order list -->
-    <h1>bahasa pemogramna untuk dipelajari!</h1>
-    <!-- type=" disc, cicle, square, none" -->
-    <ul type="">
-        <li>HTML</li>
-        <li>JAVA</li>
-        <li>PYTHON</li>
-        <li>JavaScrip</li>
-     </ul>
-    <h2>buah apa yang kamu sukai ?</h2>
-    <ol type="a">
-        <li>apel</li>
-        <li>mangga</li>
-        <li>durian</li>
-        <li>salak</li>
-    </ol>
+<br>
+    <table>
+        <tr>
+            <th>company</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>Telkomsel</td>
+            <td>082228288173</td>
+            <td rowspan="2">Indonesia</td>
+        </tr>
+        <tr>
+            <td>samsung</td>
+            <td>8765434588</td>
+        </tr>
+    </table>
+    <a href="#cari-aku">cari aku</a>
+    <p>kau</p>
+    <p>kau</p>
+    <p id="cari-aku">aku</p>
+    <p>kau</p>
 </body>
 </html>
