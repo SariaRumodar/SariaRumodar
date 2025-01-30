@@ -8,18 +8,19 @@
     <script src="java.js"></script>
 </head>
 <body>
-    <input type="" id="nama-depan" name="nama-depan" placeholder="Nama Depan"><br>
-    <input type="" id="nama-belakang" name="nama-belakang" placeholder="Nama Belakang">
+    <input type="number" id="angkapertama" name="angkapertama" placeholder="Angka Pertama"><br>
+    <input type="number" id="angkake2" name="angkake2" placeholder="Angka Ke dua">
     <br>
     <button onclick="peringatan()">ini adalah tombol</button>
 
 
     <script>
         function peringatan(){
-        let namaDepan = document.getElementById("nama-depan").value;
-        let namaBelakang = document.getElementById("nama-belakang").value;
+        let pertama = document.getElementById("angkapertama").value;
+        let kedua = document.getElementById("angkake2").value;
         
-        console.log(`${namaDepan} ${namaBelakang}`);
+        let hasil =parseInt (pertama) + parseInt(kedua);
+        console.log(hasil)
             // console.log(namaDepan + " " + namaBelakang);
         }
     </script>
