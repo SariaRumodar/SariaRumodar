@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latihan revou</title>
+    <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        buttn{
-            width: 100%;
-            border: none;
-            border-radius: 4px;
-        }
-    </style>
-
+    <script src="java.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>halo SARIA :) kiri</h1>
-        <h1>halo SARIA :) kanan</h1>
-    </header>
+    <input type="" id="nama-depan" name="nama-depan" placeholder="Nama Depan"><br>
+    <input type="" id="nama-belakang" name="nama-belakang" placeholder="Nama Belakang">
+    <br>
+    <button onclick="peringatan()">ini adalah tombol</button>
 
-    <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button onclick="klik()">klik</button>
-    </article>
-<footer>
-    <span >made by saria</span>
-</footer>
 
-<script>
-    function klik() {
-        alert("selamat datang ke website")
-    }
-</script>
+    <script>
+        function peringatan(){
+        let namaDepan = document.getElementById("nama-depan").value;
+        let namaBelakang = document.getElementById("nama-belakang").value;
+        
+        console.log(`${namaDepan} ${namaBelakang}`);
+            // console.log(namaDepan + " " + namaBelakang);
+        }
+    </script>
 </body>
 </html>
